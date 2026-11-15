@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f7b7bd">
+  <title>A Little Gift for You ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <span class="brand">♡ a little universe</span>
+      <button class="music-button" id="musicButton" type="button">♫ Putar musik</button>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+      <h1>Hi, <span id="personName">My Favorite Person</span> ♡</h1>
+      <p class="intro">Aku punya sesuatu yang kecil, tapi dibuat dengan sepenuh hati.</p>
+    </section>
+
+    <section class="game-card">
+      <div class="scene" id="scene" aria-label="Pemandangan senja piksel">
+        <div class="sun"></div><div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+        <div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="water"></div><div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+        <div class="pixel-person" id="player" aria-label="Karakter">♡</div>
+        <div class="scene-hint">Gunakan tombol panah atau A / D untuk bergerak</div>
+        <div class="collectible" id="heart">♥</div>
+      </div>
+      <div class="game-controls">
+        <span>Jelajahi sebentar dan temukan hati kecilnya.</span>
+        <button id="jumpButton" type="button">Lompat ↑</button>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel letter-panel">
+        <p class="eyebrow">A NOTE FOR YOU</p>
+        <h2>Surat kecil ♡</h2>
+        <p id="letterText">Terima kasih sudah hadir dan membuat hari-hariku terasa lebih berwarna. Semoga halaman kecil ini bisa jadi pengingat bahwa kamu berharga dan selalu punya tempat istimewa.</p>
+        <button class="soft-button" id="letterButton" type="button">Baca pesan rahasia</button>
+        <p class="secret" id="secretMessage" hidden>Kalau aku boleh mengulang satu hal, aku tetap ingin bertemu kamu. ♡</p>
+      </article>
+
+      <article class="panel gallery-panel">
+        <p class="eyebrow">OUR LITTLE MOMENTS</p>
+        <h2>Galeri kenangan</h2>
+        <div class="gallery">
+          <figure><img src="assets/foto-1.jpg" alt="Kenangan pertama" onerror="this.style.display='none'"><figcaption>Kenangan 01</figcaption></figure>
+          <figure><img src="assets/foto-2.jpg" alt="Kenangan kedua" onerror="this.style.display='none'"><figcaption>Kenangan 02</figcaption></figure>
+          <figure><img src="assets/foto-3.jpg" alt="Kenangan ketiga" onerror="this.style.display='none'"><figcaption>Kenangan 03</figcaption></figure>
+        </div>
+        <p class="small-note">Ganti foto di folder <code>assets</code>, lalu sesuaikan nama file di index.html.</p>
+      </article>
+    </section>
+
+    <section class="question panel">
+      <p class="eyebrow">ONE LITTLE QUESTION</p>
+      <h2>Would you keep making memories with me?</h2>
+      <div class="answers">
+        <button class="yes-button" id="yesButton" type="button">Of course! ♡</button>
+        <button class="soft-button" id="maybeButton" type="button">Maybe...</button>
+      </div>
+      <p id="answerMessage" class="answer-message" aria-live="polite"></p>
+    </section>
+
+    <footer>Made with lots of love <span>♥</span> — edit this little world in <code>index.html</code></footer>
+  </main>
+  <audio id="bgMusic" src="assets/lagu.mp3" loop></audio>
+  <script src="script.js"></script>
+</body>
+</html>
